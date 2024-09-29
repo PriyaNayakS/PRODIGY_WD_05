@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: black;
+}
+
+body {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url("sky.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: multiply; /* Controls how the background image blends with the color */
+    background-color: rgba(0, 0, 0, 0.10); 
+    backdrop-filter:blur(15px) ;/* Adds a semi-transparent overlay to darken the background */
+}
+
+/* Ensure the container is clearly visible */
+.card {
+    width: 90%;
+    max-width: 470px;
+    /* background: linear-gradient(135deg, #64bea0, #5b548a); */
+    background: linear-gradient(to top, rgb(0,0,0,0.10));
+    color: #fff;
+    margin: 80px auto 0;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); /* Adds a shadow to make the card stand out */
+    z-index: 1; /* Ensure card stays on top */
+    position: relative;
+    transform: translateY(-50px);
+    
+}
+
+.search{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search input{
+    border: 0;
+    outline: 0;
+    background: #ebede7;
+    color: #555;
+    padding: 10px 25px;
+    height: 60px;
+    border-radius: 30px;
+    flex: 1;
+    margin-right: 16px;
+    font-size: 18px;
+}
+
+.search button{
+    border: 0;
+    outline: 0;
+    background: #ebede7;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.search button i{
+    width: 26px;
+}
+
+.weather-icon{
+    width: 130px;
+    margin-top: 30px;
+}
+
+.weather h1{
+    font-size: 80px;
+    font-weight: 500;
+}
+
+.weather h2{
+    font-size: 45px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 50px;
+}
+
+.col{
+    display: flex;
+    align-items: center;
+    text-align: left;
+    font-size: 20px;
+}
+
+.col img{
+    width: 50px;
+    margin-right: 10px;
+}
+
+.humidity, .wind{
+    font-size: 28px;
+    margin-top: -6px;
+}
+
+.weather{
+    display: none;
+}
+
+.error{
+    text-align: left;
+    margin-left: 10px;
+    font-size: 14px;
+    margin-top: 10px;
+    display: none;
+    color: black;
+}
+
+
